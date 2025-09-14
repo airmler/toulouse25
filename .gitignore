@@ -1,0 +1,33 @@
+# LaTeX intermediate files
+*.aux
+*.bbl
+*.blg
+*.idx
+*.ilg
+*.ind
+*.lof
+*.log
+*.lot
+*.out
+*.toc
+*.acn
+*.acr
+*.alg
+*.glg
+*.glo
+*.gls
+*.ist
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+
+# Editor backups
+*~
+*.swp
+
+# Output files
+*.dvi
+*.ps
+
+# Optional: ignore generated PDFs (uncomment if you don’t want them in repo)
+*.pdf

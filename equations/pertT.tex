@@ -1,0 +1,35 @@
+\documentclass{standalone}
+\usepackage{amsmath}
+
+\begin{document}
+
+\begin{equation*}
+\begin{aligned}
+	&\textrm{Solve CCSD to get } T_{1}, T_{2} \\
+	&\textrm{for occupied } (i,j,k): \\
+	&\quad \hat{t}^{abc} = \text{build\_intermediate}(T_1, T_2, \text{integrals}) \# \textrm{for fixed ijk} \\
+	&\quad \bar{t}^{abc} = \text{build\_intermediate}(T_1, T_2, \text{integrals}) \\
+	&\quad \delta E_{(T)} \gets \sum_{abc} \hat{t}^{abc} \bar{t}^{abc}
+\end{aligned}
+\end{equation*}
+\end{document}
+
+%\documentclass{standalone}
+%\usepackage{algorithm}
+%\usepackage{algpseudocode}
+%\usepackage{amsmath}
+%
+%\begin{document}
+%\begin{algorithm}
+%
+%\caption{Perturbative triples $(T)$ computation}
+%\begin{algorithmic}[1]
+%\State Solve CCSD to get $T_1$ and $T_2$ 
+%\For{occupied $(i,j,k)$}
+%\State $\hat{t}(abc)\gets \text{build\_residual}(T_1,T_2,\text{integrals})$
+%\State $\bar{t}(abc) \gets \text{build\_whatever}(T_1,T_2,\text{integrals})$
+%\State $\Delta E_{(T)} \mathrel{+}= \hat{t}(abc) \bar{t}(abc)$
+%\EndFor
+%\end{algorithmic}
+%\end{algorithm}
+%\end{document}
